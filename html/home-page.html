@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100 h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/custom.css">
+    <link rel="stylesheet" href="../scss/home.css">
+    <title>Home</title>
+</head>
+<body class=" w-100 h-100 p-5">
+    <div class="d-flex justify-content-between ">
+        <div>
+            <h1>Home | Inventory Management</h1>
+        </div>
+        <div>
+           <a class=" d-flex gap-2 text-decoration-none" href="https://github.com/Rekanovic17/Full-Application">
+            <img class="icon" src="../icon/code.svg" alt="Icon svg">
+            <h3>Source code</h3>
+        </a>
+        </div>
+    </div>
+    <div class="d-flex flex-column gap-3 h-75 justify-content-center align-items-center">
+        <h2 class="text-primary">Welcome to our intuitive inventory management application</h2>
+        <p class="fw-bold w-50 text-center"> Simplify your inventory operations and save valuable time with our powerful tool. 
+            Effortlessly track your stock all within a single, user-friendly interface! Hit sign up
+            if you don't have an account or sign in if you already created one!</p>
+            <div class="gap-3 d-flex">
+                <button class="btn dugme" id="signinbtn">Sign In</button>
+                <button id="signupbtn" class="btn dugme">Sign Up</button>
+            </div>
+
+    </div>
+    <div class="d-flex justify-content-between align-items-end pt-5 border border-top pt-3">
+        <div class="d-flex flex-column ">
+           <div class="gap-2 d-flex">
+            <span class="text-secondary">Autor:</span> 
+            <span class="fw-bold ">Jasmin Rekanović</span>
+           </div>
+           <div class="gap-2 d-flex">
+            <span class="text-secondary">Email:</span> 
+            <span class="fw-bolder"><a href="mailto:rekanovicjasko@gmail.com">rekanovicjasko@gmail.com</a></span>
+        </div>   
+        </div>
+        <div class="gap-2 d-flex align-items-end">
+            <span class="text-secondary">All Rights Reserved &copy; Rekanović Jasmin 2023</span>
+           </div> 
+    </div>
+    <div id="signinmodal" class="w-100 h-100 fixed-top custom-modal justify-content-center align-items-center d-none" >
+        <div class="d-flex flex-column gap-2 w-25 p-5 modal-color border border-1">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="text-primary">Sign In</h2>
+                <img class="icon" id="signinbtnclose" src="../icon/x-mark.svg" alt="x icon">
+            </div>
+            <label for="signin-Username" class="fw-bold">Username:</label>
+            <input class="form-control" id="signin-Username" type="text" placeholder="Username">
+            <label for="signin-Password" class="fw-bold">Password:</label>
+            <input class="form-control" id="signin-Password" type="password" placeholder="Password">
+            <button id="signinformbtn" class="btn dugme mt-4" >Sign In</button>
+            <div id="signinformmassege" class="text-danger fw-bold"></div>
+        </div>
+    </div>
+
+    <div id="signupmodal" class="w-100 h-100 fixed-top custom-modal justify-content-center align-items-center d-none" >
+        <div class="d-flex flex-column gap-2 w-25 p-5 modal-color border border-1">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="text-primary">Sign Up</h2>
+                <img class="icon" id="signupbtnclose" src="../icon/x-mark.svg" alt="x icon">
+            </div>
+            <label for="signup-Fullname" class="fw-bold">Full Name:</label>
+            <input class="form-control" id="signup-Fullname" type="text" placeholder="Full Name">
+            <label for="signup-Username" class="fw-bold">Username:</label>
+            <input class="form-control" id="signup-Username" type="text" placeholder="Username">
+            <label for="signup-Password" class="fw-bold">Password:</label>
+            <input class="form-control" id="signup-Password" type="password" placeholder="Password">
+            <label for="ConfirmPassword" class="fw-bold">Confirm Password:</label>
+            <input class="form-control" id="signup-ConfirmPassword" type="password" placeholder="Confirm Password">
+            <button id="Signup-form-btn" class="btn dugme mt-4" >Sign Up</button>
+            <div id="signup-message" class="text-danger fw-bold mt-2"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase.js"></script>
+    <script src="/js/home1.js"></script>
+</body>
+</html>

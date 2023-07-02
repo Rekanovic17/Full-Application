@@ -1,0 +1,23 @@
+@import "custom.scss";
+.icon{
+    width: 40px;
+}
+.dugme{
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+
+    &:hover {
+        border: 1px solid $primary;
+        color: black;
+        background-color: $primary;
+    }
+}
+.custom-modal{
+    backdrop-filter: blur(5px);
+}
+.modal-color{
+    background-color: $gray-200;
+}
